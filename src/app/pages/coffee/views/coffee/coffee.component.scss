@@ -1,0 +1,9 @@
+.custom-tr {
+  >th {
+    @apply bg-gray-900 text-white;
+  }
+
+  >td {
+    box-shadow: none;
+  }
+}

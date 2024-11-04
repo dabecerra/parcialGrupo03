@@ -1,1 +1,27 @@
-<p>coffee works!</p>
+<article class="w-full">
+  <picture>
+    <source srcset="./background.jpeg" type="image/jpeg" />
+    <img src="./background.jpeg" alt="coffee" />
+  </picture>
+
+  <div class="max-w-screen-md ml-3 mt-2">
+    <table class="table table-striped">
+      <thead>
+        <tr class="custom-tr">
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Région</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="custom-tr" *ngFor="let coffee of data()">
+          <td>{{ coffee.id }}</td>
+          <td>{{ coffee.nombre }}</td>
+          <td>{{ coffee.tipo }}</td>
+          <td>{{ coffee.region }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</article>
