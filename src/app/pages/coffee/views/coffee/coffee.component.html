@@ -23,5 +23,9 @@
         </tr>
       </tbody>
     </table>
+
+    <div *ngFor="let tipo of coffeTypes | keyvalue">
+      <p class="m-0">Total tipo {{ tipo.key }}: {{ tipo.value }}</p>
+    </div>
   </div>
 </article>
